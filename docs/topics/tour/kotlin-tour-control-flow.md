@@ -69,9 +69,9 @@ fun main() {
 Use `when` when you have a conditional expression with multiple branches.
 
 To use `when`:
-* Place the conditional expression within parentheses `()` and the actions to take
-  within curly braces `{}`.
-* Use `->` in each branch to separate each condition from each action.
+* Place the value you want to evaluate within parentheses `()`.
+* Place the branches within curly braces `{}`.
+* Use `->` in each branch to separate each check from the action to take if the check is successful.
 
 `when` can be used either as a statement or as an expression.
 
