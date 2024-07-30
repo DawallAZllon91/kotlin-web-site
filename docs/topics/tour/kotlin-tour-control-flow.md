@@ -170,7 +170,7 @@ fun main() {
 {kotlin-runnable="true" kotlin-min-compiler-version="1.3" id="kotlin-tour-when-expression-boolean-subject"}
 
 Using `when` with a subject makes your code easier to read and maintain. When you use a subject with a `when` expression, 
-it also helps the compiler check that all possible cases are covered. Otherwise, if you don't use a subject with a 
+it also helps Kotlin check that all possible cases are covered. Otherwise, if you don't use a subject with a 
 `when` expression, you need to provide an else branch.
 
 ## Ranges
@@ -329,7 +329,7 @@ In the first use case (`while`):
 > The following examples use the [increment operator](operator-overloading.md#increments-and-decrements) `++` to
 > increment the value of the `cakesEaten` variable.
 >
-{type="note"}
+{type="tip"}
 
 ```kotlin
 fun main() {

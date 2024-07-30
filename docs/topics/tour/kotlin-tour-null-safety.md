@@ -116,7 +116,7 @@ fun main() {
 >   person.company?.address?.country
 > ```
 >
-{type="note"}
+{type="tip"}
 
 The safe call operator can also be used to safely call an extension or member function. In this case, a null check is 
 performed before the function is called. If the check detects a `null` value, then the call is skipped and `null` is returned.

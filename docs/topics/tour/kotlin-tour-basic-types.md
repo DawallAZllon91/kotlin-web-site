@@ -58,9 +58,7 @@ For more information on basic types and their properties, see [Basic types](basi
 With this knowledge, you can declare variables and initialize them later. Kotlin can manage this as long as variables
 are initialized before the first read.
 
-To declare a variable without initializing it, specify its type with `:`.
-
-For example:
+To declare a variable without initializing it, specify its type with `:`. For example:
 
 ```kotlin
 fun main() {

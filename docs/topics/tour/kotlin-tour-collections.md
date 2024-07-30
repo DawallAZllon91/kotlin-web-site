@@ -315,7 +315,7 @@ fun main() {
 > 
 > This tour explains null values later in the [Null safety](kotlin-tour-null-safety.md) chapter.
 > 
-{type="tip"}
+{type="note"}
 
 You can also use the [indexed access operator](operator-overloading.md#indexed-access-operator) `[]` to add items to a mutable map:
 
