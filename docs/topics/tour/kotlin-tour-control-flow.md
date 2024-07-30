@@ -73,9 +73,8 @@ To use `when`:
 * Place the branches within curly braces `{}`.
 * Use `->` in each branch to separate each check from the action to take if the check is successful.
 
-`when` can be used either as a statement or as an expression.
-
-A **statement** doesn't return anything but performs actions instead.
+`when` can be used either as a statement or as an expression. A **statement** doesn't return anything but performs actions
+instead.
 
 Here is an example of using `when` as a statement:
 
@@ -103,7 +102,7 @@ fun main() {
 >
 {type="note"}
 
-An **expression** returns a value that can be used later on in your code.
+An **expression** returns a value that can be used later in your code.
 
 Here is an example of using `when` as an expression. The `when` expression is assigned immediately to a variable which is
 later used with the `println()` function:
@@ -198,7 +197,7 @@ if the dice match or `You lose :(` otherwise.
 
 <deflist collapsible="true">
     <def title="Hint">
-        Use the <a href="operator-overloading.md#equality-and-inequality-operators"> equality operator </a>  (<code>==</code>) to compare the dice results. 
+        Use the <a href="operator-overloading.md#equality-and-inequality-operators">equality operator</a> (<code>==</code>) to compare the dice results. 
     </def>
 </deflist>
 
@@ -228,7 +227,7 @@ fun main() {
 ### Exercise 2 {initial-collapse-state="collapsed" id="conditional-expressions-exercise-2"}
 
 Using a `when` expression, update the following program so that when you input the names of GameBoy buttons, the actions
-are printed to output.
+are printed as output.
 
 | **Button** | **Action**             |
 |------------|------------------------|
@@ -452,7 +451,7 @@ divisible by five with the word "buzz". Any number divisible by both 3 and 5 mus
 </deflist>
 
 <deflist collapsible="true">
-    <def title="Hint">
+    <def title="Hint 2">
         Use the modulo operator (<code>%</code>) to return the remainder of a number being divided. Use the <a href="operator-overloading.md#equality-and-inequality-operators">equality operator</a> 
         (<code>==</code>) to check if the remainder equals zero.
     </def>
@@ -514,8 +513,6 @@ fun main() {
 }
 ```
 {initial-collapse-state="collapsed" collapsed-title="Example solution" id="kotlin-tour-control-flow-loops-solution-3"}
-
-
 
 ## Next step
 

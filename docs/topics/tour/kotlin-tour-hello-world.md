@@ -26,11 +26,9 @@ In Kotlin:
 * the body of a function is written within curly braces `{}`
 * [`println()`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/println.html) and [`print()`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/print.html) functions print their arguments to standard output
 
-> A function is a set of instructions that performs a specific task. Once you create a function, you can use it whenever
-> you need to perform that task, without having to write the instructions all over again. Functions are discussed in more
-> detail in a couple of chapters. Until then, all examples use the `main()` function.
-> 
-{type="note"}
+A function is a set of instructions that performs a specific task. Once you create a function, you can use it whenever 
+you need to perform that task, without having to write the instructions all over again. Functions are discussed in more
+detail in a couple of chapters. Until then, all examples use the `main()` function.
 
 ## Variables
 

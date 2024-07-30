@@ -13,9 +13,9 @@
 Every variable and data structure in Kotlin has a type. Types are important because they tell the compiler what you are allowed to 
 do with that variable or data structure. In other words, what functions and properties it has.
 
-In the last chapter, Kotlin was able to tell in the previous example that `customers` has type: [`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/).
+In the last chapter, Kotlin was able to tell in the previous example that `customers` has type [`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/).
 Kotlin's ability to **infer** the type is called **type inference**. `customers` is assigned an integer
-value. From this, Kotlin infers that `customers` has numerical type: `Int`. As a result, the compiler knows that you
+value. From this, Kotlin infers that `customers` has a numerical type `Int`. As a result, the compiler knows that you
 can perform arithmetic operations with `customers`:
 
 ```kotlin

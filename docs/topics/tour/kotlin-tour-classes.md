@@ -320,8 +320,9 @@ fun main() {
 ### Exercise 3 {initial-collapse-state="collapsed"}
 
 To test your code, you need a generator that can create random employees. Define a `RandomEmployeeGenerator` class with 
-a fixed list of potential names (inside the class body), and that is configured by a minimum and maximum salary (inside the class header). 
-In the class body, define the `generateEmployee()` function. Once again, the main function demonstrates how you can use this class.
+a fixed list of potential names (inside the class body). Configure the class with a minimum and maximum salary (inside 
+the class header). In the class body, define the `generateEmployee()` function. Once again, the main function demonstrates
+how you can use this class.
 
 <deflist collapsible="true" id="kotlin-tour-classes-exercise-3-hint-1">
     <def title="Hint">

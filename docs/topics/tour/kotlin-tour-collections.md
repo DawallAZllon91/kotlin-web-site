@@ -176,7 +176,7 @@ fun main() {
 
 You can see in the previous example that because sets only contain unique elements, the duplicate `"cherry"` item is dropped.
 
-> To prevent unwanted modifications, you can create a read-only view of a mutable set by assigning it to a `Set`
+> To prevent unwanted modifications, you can create a read-only view of a mutable set by assigning it to a `Set`:
 > ```kotlin
 >     val fruit: MutableSet<String> = mutableSetOf("apple", "banana", "cherry", "cherry")
 >     val fruitLocked: Set<String> = fruit
@@ -273,7 +273,7 @@ fun main() {
 ```
 {kotlin-runnable="true" kotlin-min-compiler-version="1.3" id="kotlin-tour-maps-declaration"}
 
-> To prevent unwanted modifications, you can create a read-only view of a mutable map by assigning it to a `Map`
+> To prevent unwanted modifications, you can create a read-only view of a mutable map by assigning it to a `Map`:
 > ```kotlin
 >     val juiceMenu: MutableMap<String, Int> = mutableMapOf("apple" to 100, "kiwi" to 190, "orange" to 100)
 >     val juiceMenuLocked: Map<String, Int> = juiceMenu
@@ -310,7 +310,7 @@ fun main() {
 > ```
 > {kotlin-runnable="true" kotlin-min-compiler-version="1.3" id="kotlin-tour-map-no-key" validate="false"}
 > 
-> This tour explains about null values later in the [Null safety](kotlin-tour-null-safety.md) chapter.
+> This tour explains null values later in the [Null safety](kotlin-tour-null-safety.md) chapter.
 > 
 {type="tip"}
 
