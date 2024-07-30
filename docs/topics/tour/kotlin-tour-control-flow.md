@@ -19,9 +19,10 @@ through loops.
 Kotlin provides `if` and `when` for checking conditional expressions. 
 
 > If you have to choose between `if` and `when`, we recommend using `when` because it:
-> * makes your code easier to read.
-> * makes it easier to add another branch.
-> * leads to fewer mistakes in your code.
+> 
+> * Makes your code easier to read.
+> * Makes it easier to add another branch.
+> * Leads to fewer mistakes in your code.
 > 
 {type="note"}
 
@@ -69,6 +70,7 @@ fun main() {
 Use `when` when you have a conditional expression with multiple branches.
 
 To use `when`:
+
 * Place the value you want to evaluate within parentheses `()`.
 * Place the branches within curly braces `{}`.
 * Use `->` in each branch to separate each check from the action to take if the check is successful.
@@ -185,6 +187,7 @@ To declare a range that increments in a step that isn't 1, use `step` and your d
 For example, `1..5 step 2` is equivalent to `1, 3, 5`.
 
 You can also do the same with `Char` ranges:
+
 * `'a'..'d'` is equivalent to `'a', 'b', 'c', 'd'`
 * `'z' downTo 's' step 2` is equivalent to `'z', 'x', 'v', 't'`
 
@@ -314,10 +317,12 @@ fun main() {
 ### While
 
 `while` can be used in two ways:
+
   * To execute a code block while a conditional expression is true. (`while`)
   * To execute the code block first and then check the conditional expression. (`do-while`)
 
 In the first use case (`while`):
+
 * Declare the conditional expression for your while loop to continue within parentheses `()`. 
 * Add the action you want to complete within curly braces `{}`.
 
@@ -343,6 +348,7 @@ fun main() {
 {kotlin-runnable="true" kotlin-min-compiler-version="1.3" id="kotlin-tour-while-loop"}
 
 In the second use case (`do-while`):
+
 * Declare the conditional expression for your while loop to continue within parentheses `()`.
 * Define the action you want to complete within curly braces `{}` with the keyword `do`.
 
@@ -379,6 +385,7 @@ Now that you know the fundamentals of Kotlin control flow, it's time to learn ho
 ### Exercise 1 {initial-collapse-state="collapsed" id="loops-exercise-1"}
 
 You have a program that counts pizza slices until there’s a whole pizza with 8 slices. Refactor this program in two ways:
+
 * Use a `while` loop.
 * Use a `do-while` loop.
 
@@ -444,7 +451,7 @@ numbers from 1 to 100 incrementally, replacing any number divisible by three wit
 divisible by five with the word "buzz". Any number divisible by both 3 and 5 must be replaced with the word "fizzbuzz".
 
 <deflist collapsible="true">
-    <def title="Hint">
+    <def title="Hint 1">
         Use a <code>for</code> loop to count numbers and a <code>when</code> expression to decide what to print at each
         step. 
     </def>

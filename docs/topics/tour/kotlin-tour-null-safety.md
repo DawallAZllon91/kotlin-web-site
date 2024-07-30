@@ -19,10 +19,11 @@ To help prevent issues with `null` values in your programs, Kotlin has null safe
 potential problems with `null` values at compile time, rather than at run time.
 
 Null safety is a combination of features that allow you to:
-* explicitly declare when `null` values are allowed in your program.
-* check for `null` values.
-* use safe calls to properties or functions that may contain `null` values.
-* declare actions to take if `null` values are detected.
+
+* Explicitly declare when `null` values are allowed in your program.
+* Check for `null` values.
+* Use safe calls to properties or functions that may contain `null` values.
+* Declare actions to take if `null` values are detected.
 
 ## Nullable types
 
@@ -110,6 +111,7 @@ fun main() {
 
 > Safe calls can be chained so that if any property of an object contains a `null` value, then `null` is returned without 
 > an error being thrown. For example:
+> 
 > ```kotlin
 >   person.company?.address?.country
 > ```
@@ -203,5 +205,6 @@ fun main() {
 ## What's next?
 
 Congratulations! Now that you have completed the Kotlin tour, check out our tutorials for popular Kotlin applications:
+
 * [Create a backend application](jvm-create-project-with-spring-boot.md)
 * [Create a cross-platform application for Android and iOS](https://www.jetbrains.com/help/kotlin-multiplatform-dev/multiplatform-getting-started.html)

@@ -23,10 +23,12 @@ class Customer
 ## Properties
 
 Characteristics of a class's object can be declared in properties. You can declare properties for a class:
+
 * Within parentheses `()` after the class name.
 ```kotlin
 class Contact(val id: Int, var email: String)
 ```
+
 * Within the class body defined by curly braces `{}`.
 ```kotlin
 class Contact(val id: Int, var email: String) {
@@ -69,6 +71,7 @@ fun main() {
 {kotlin-runnable="true" kotlin-min-compiler-version="1.3" id="kotlin-tour-class-create-instance"}
 
 In the example:
+
 * `Contact` is a class.
 * `contact` is an instance of the `Contact` class.
 * `id` and `email` are properties.
@@ -141,6 +144,7 @@ the instance to readable output, compare instances of a class, copy instances, a
 automatically available, you don't have to spend time writing the same boilerplate code for each of your classes.
 
 To declare a data class, use the keyword `data`:
+
 ```kotlin
 data class User(val name: String, val id: Int)
 ```
@@ -154,6 +158,7 @@ The most useful predefined member functions of data classes are:
 | `.copy()`           | Creates a class instance by copying another, potentially with some different properties.                       |
 
 See the following sections for examples of how to use each function:
+
 * [Print as string](#print-as-string)
 * [Compare instances](#compare-instances)
 * [Copy instance](#copy-instance)
@@ -325,14 +330,14 @@ the class header). In the class body, define the `generateEmployee()` function. 
 how you can use this class.
 
 <deflist collapsible="true" id="kotlin-tour-classes-exercise-3-hint-1">
-    <def title="Hint">
+    <def title="Hint 1">
         Lists have an extension function called <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/random.html"><code>.random()</code></a>
         that returns a random item within a list.
     </def>
 </deflist>
 
 <deflist collapsible="true" id="kotlin-tour-classes-exercise-3-hint-2">
-    <def title="Hint">
+    <def title="Hint 2">
         <code>Random.nextInt(from = ..., until = ...)</code> gives you a random <code>Int</code> number within specified limits.
     </def>
 </deflist>

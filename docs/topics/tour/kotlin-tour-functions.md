@@ -25,11 +25,12 @@ fun main() {
 {kotlin-runnable="true" kotlin-min-compiler-version="1.3" id="kotlin-tour-function-demo"}
 
 In Kotlin:
-* function parameters are written within parentheses `()`.
-* each parameter must have a type, and multiple parameters must be separated by commas `,`.
-* the return type is written after the function's parentheses `()`, separated by a colon `:`.
-* the body of a function is written within curly braces `{}`.
-* the `return` keyword is used to exit or return something from a function.
+
+* Function parameters are written within parentheses `()`.
+* Each parameter must have a type, and multiple parameters must be separated by commas `,`.
+* The return type is written after the function's parentheses `()`, separated by a colon `:`.
+* The body of a function is written within curly braces `{}`.
+* The `return` keyword is used to exit or return something from a function.
 
 > If a function doesn't return anything useful, the return type and `return` keyword can be omitted. Learn more about
 > this in [Functions without return](#functions-without-return).
@@ -37,10 +38,11 @@ In Kotlin:
 {type="note"}
 
 In the following example:
+
 * `x` and `y` are function parameters.
 * `x` and `y` have type `Int`.
-* the function's return type is `Int`.
-* the function returns a sum of `x` and `y` when called.
+* The function's return type is `Int`.
+* The function returns a sum of `x` and `y` when called.
 
 ```kotlin
 fun sum(x: Int, y: Int): Int {
@@ -164,7 +166,7 @@ fun main() {
 However, if you want your code to be quickly understood by other developers, it's a good idea to explicitly define the 
 return type even when using the assignment operator `=`.
 
-> If you use `{}` curly braces to declare your function body, you must declare the return type unless it is `Unit`.
+> If you use `{}` curly braces to declare your function body, you must declare the return type unless it is the `Unit` type.
 > 
 {type="note"}
 
@@ -342,17 +344,19 @@ Lambda expressions can be hard to understand at first glance so let's break it d
 within curly braces `{}`.
 
 Within the lambda expression, you write:
-* the parameters followed by an `->`.
-* the function body after the `->`.
+
+* The parameters followed by an `->`.
+* The function body after the `->`.
 
 In the previous example:
+
 * `text` is a function parameter.
 * `text` has type `String`.
-* the function returns the result of the [`.uppercase()`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/uppercase.html)
+* The function returns the result of the [`.uppercase()`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/uppercase.html)
 function called on `text`.
-* the entire lambda expression is assigned to the `upperCaseString` variable with the assignment operator `=`.
-* the lambda expression is called by using the variable `upperCaseString` like a function and the string `"hello"` as a parameter.
-* the `println()` function prints the result.
+* The entire lambda expression is assigned to the `upperCaseString` variable with the assignment operator `=`.
+* The lambda expression is called by using the variable `upperCaseString` like a function and the string `"hello"` as a parameter.
+* The `println()` function prints the result.
 
 > If you declare a lambda without parameters, then there is no need to use `->`. For example:
 > ```kotlin
@@ -362,9 +366,10 @@ function called on `text`.
 {type="note"}
 
 Lambda expressions can be used in a number of ways. You can:
-* [pass a lambda expression as a parameter to another function](#pass-to-another-function)
-* [return a lambda expression from a function](#return-from-a-function)
-* [invoke a lambda expression on its own](#invoke-separately)
+
+* [Pass a lambda expression as a parameter to another function](#pass-to-another-function)
+* [Return a lambda expression from a function](#return-from-a-function)
+* [Invoke a lambda expression on its own](#invoke-separately)
 
 ### Pass to another function
 
@@ -392,10 +397,12 @@ fun main() {
 {kotlin-runnable="true" kotlin-min-compiler-version="1.3" id="kotlin-tour-lambda-filter"}
 
 The `.filter()` function accepts a lambda expression as a predicate:
+
 * `{ x -> x > 0 }` takes each element of the list and returns only those that are positive.
 * `{ x -> x < 0 }` takes each element of the list and returns only those that are negative.
 
-This example demonstrates two ways of passing a lambda expression to a function: 
+This example demonstrates two ways of passing a lambda expression to a function:
+
 * For positive numbers, the example adds the lambda expression directly in the `.filter()` function.
 * For negative numbers, the example assigns the lambda expression to the `isNegative` variable. Then
 the `isNegative` variable is used as a function parameter in the `.filter()` function. In this case, you have to specify
@@ -434,6 +441,7 @@ fun main() {
 {kotlin-runnable="true" kotlin-min-compiler-version="1.3" id="kotlin-tour-lambda-map"}
 
 The `.map()` function accepts a lambda expression as a transform function:
+
 * `{ x -> x * 2 }` takes each element of the list and returns that element multiplied by 2.
 * `{ x -> x * 3 }` takes each element of the list and returns that element multiplied by 3.
 
@@ -448,8 +456,9 @@ specify the function type. The compiler needs the function type so that it knows
 allowed for that function.
 
 The syntax for a function type has:
-* each parameter's type written within parentheses `()` and separated by commas `,`.
-* the return type written after `->`.
+
+* Each parameter's type written within parentheses `()` and separated by commas `,`.
+* The return type written after `->`.
 
 For example: `(String) -> String` or `(Int, Int) -> Int`.
 
